@@ -2,7 +2,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class PalindromeCSVReader {
+public class CodigoConsiso {
 
     public static void main(String[] args) {
         String csvFile = "path/to/your/csvfile.csv"; // Replace this with the actual path to your CSV file
