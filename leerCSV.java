@@ -28,6 +28,7 @@ public class leerCSV{
 /* */
 import java.io.BufferedReader;
 import java.io.FileReader;
+import java.io.IOException;
 
 public class leerCSV {
     public static void main(String[] args) {
@@ -37,9 +38,14 @@ public class leerCSV {
 
         try (BufferedReader br = new BufferedReader(new FileReader(csvFile))) {
             while ((line = br.readLine()) != null) {
-                String[]
+                String[] palabra = line.split(csvSplitBy);
+                for (String palabras : palabra);
+                System.out.print(palabras + " ");
+                }
+                System.out.println();
             }
-
+        } cath (IOException e) {
+            e.printStackTrace();
         }
     }
 }
