@@ -4,7 +4,7 @@ import java.util.List;
 //*Abrir el CSV y leerlo*/
 public class Main {
     public static void main(String[] args) {
-        String csvFile = "C:\\Users\\RJBar\\OneDrive\\Documents\\GitHub\\Grupo-3-Proyecto-Java\\elmeromer\\ExampleCSV.csv";
+        String csvFile = "./assets/Libro1.csv";
 
         ;
 
