@@ -1,7 +1,8 @@
 package elmeromer;
 
-public class PalindromeChecker {
-    public static boolean isPalindrome(String word) {
+//*Revisar si la palabra es palindrome*/
+public class Interfaz {
+    public static boolean esPalindrome(String word) {
         int start = 0;
         int end = word.length() - 1;
         while (start < end) {

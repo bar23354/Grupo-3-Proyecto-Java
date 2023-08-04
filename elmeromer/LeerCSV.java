@@ -1,15 +1,16 @@
 package elmeromer;
 
+//*Librerias de Java sugeridas por ChatGPT (OpenAI 2023)*/
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CSVReader {
+public class LeerCSV {
     private String csvFile;
 
-    public CSVReader(String csvFile) {
+    public LeerCSV(String csvFile) {
         this.csvFile = csvFile;
     }
 

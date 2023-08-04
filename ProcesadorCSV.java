@@ -1,11 +1,9 @@
+//Isa//
+
 import java.util.List;
 
 public class ProcesadorCSV {
-    private String filePath;
-    public ProcesadorCSV(leerCSV lector, PalindromeSi palindromo) {
-        
-    }
-
+    
     public void setFilePath(String filePath) {
         this.filePath = filePath;
     }
@@ -28,4 +26,8 @@ public class ProcesadorCSV {
             System.out.println("Error al procesar el archivo CSV: " + e.getMessage());
         }
     }
+}
+
+
+
 }
