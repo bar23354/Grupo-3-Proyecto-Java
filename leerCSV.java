@@ -32,19 +32,20 @@ import java.io.IOException;
 
 public class leerCSV {
     public static void main(String[] args) {
-        String csvFile = "./assets/Libro1.csv";
+        String csvFile = "./assets/Libro1.csv"; /*ubicar archivo csv*/
         String line;
-        String csvSplitBy = ",";
+        String csvSplitBy = ","; /*delimitado por comas*/
 
         try (BufferedReader br = new BufferedReader(new FileReader(csvFile))) {
             while ((line = br.readLine()) != null) {
+                /*separa los campos*/
                 String[] palabra = line.split(csvSplitBy);
-                for (String palabras : palabra);
-                System.out.print(palabras + " ");
+                for (String word : palabra){
+                    System.out.print(word + " ");
                 }
-                System.out.println();
+                System.out.println(); /*nueva linea*/ */
             }
-        } cath (IOException e) {
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }
