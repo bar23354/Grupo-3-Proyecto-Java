@@ -8,10 +8,10 @@ import java.util.List;
 
 
 public class leerCSV{
-    public static List<String[]> readCSV(String filePath) {
+    public static List<String[]> readCSV(Object filePath) {
         List<String[]> dataList = new ArrayList<>();
 
-        try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
+        try (BufferedReader reader = new BufferedReader(new FileReader((String) filePath))) {
             String line;
             while ((line = reader.readLine()) != null) {
                 String[] data = line.split(",");
@@ -25,4 +25,3 @@ public class leerCSV{
     }
 
 }
-
