@@ -11,8 +11,8 @@ public class Main {
         LeerCSV csvReader = new LeerCSV(csvFile);
         List<String> words = csvReader.readCSV();
 
-        List<String> palindromeWords = ProcesadorCSV.findPalindromes(words);
+        List<String> PalabrasPali = ProcesadorCSV.DoraExploradora(words);
 
-        ProcesadorCSV.printPalindromes(palindromeWords);
+        ProcesadorCSV.printPalindromes(PalabrasPali);
     }
 }

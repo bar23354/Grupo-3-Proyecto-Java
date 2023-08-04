@@ -5,20 +5,20 @@ import java.util.List;
 
 //*Imprimir palabras palindromes*/
 public class ProcesadorCSV {
-    public static List<String> findPalindromes(List<String> words) {
-        List<String> palindromeWords = new ArrayList<>();
+    public static List<String> DoraExploradora(List<String> words) {
+        List<String> PalabrasPali = new ArrayList<>();
 
         for (String word : words) {
-            if (Interfaz.isPalindrome(word)) {
-                palindromeWords.add(word);
+            if (Interfaz.esPalindrome(word)) {
+                PalabrasPali.add(word);
             }
         }
 
-        return palindromeWords;
+        return PalabrasPali;
     }
 
-    public static void printPalindromes(List<String> palindromeWords) {
-        for (String word : palindromeWords) {
+    public static void printPalindromes(List<String> PalabrasPali) {
+        for (String word : PalabrasPali) {
             System.out.println(word);
         }
     }
