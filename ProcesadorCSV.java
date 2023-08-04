@@ -4,12 +4,15 @@ import java.util.List;
 
 public class ProcesadorCSV {
     
+    private String filePath;
+
     public void setFilePath(String filePath) {
         this.filePath = filePath;
     }
 
     public void procesar() {
-        if (filePath == null || filePath.isEmpty()) {
+        Object filePath;
+        if (filePath == null || ((String) filePath).isEmpty()) {
             System.out.println("La ruta del archivo no está especificada.");
             return;
         }
@@ -26,8 +29,4 @@ public class ProcesadorCSV {
             System.out.println("Error al procesar el archivo CSV: " + e.getMessage());
         }
     }
-}
-
-
-
 }
