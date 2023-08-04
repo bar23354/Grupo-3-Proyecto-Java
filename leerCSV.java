@@ -1,27 +1,27 @@
 import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.List;
+
 
 
 public class leerCSV{
-    public static String[] readCSV(String filePath) { // Esta función lee un archivo CSV y lo imprime en pantalla
+    public static List<String[]> readCSV(String filePath) {
+        List<String[]> dataList = new ArrayList<>();
+
         try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
             String line;
             while ((line = reader.readLine()) != null) {
-                // Process each line of the CSV file here
                 String[] data = line.split(",");
-
-                // Do something with the data (e.g., print it)
-                return data;
+                dataList.add(data);
             }
         } catch (IOException e) {
             e.printStackTrace();
         }
-    }
 
+        return dataList;
+    }
 
 
 
