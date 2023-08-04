@@ -1,4 +1,6 @@
-import java.io.BufferedReader;
+
+/** 
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -25,7 +27,22 @@ public class leerCSV{
         }
     }
 
+}
+/* */
+import java.io.BufferedReader;
+import java.io.FileReader;
 
+public class leerCSV {
+    public static void main(String[] args) {
+        String csvFile = "./assets/Libro1.csv";
+        String line;
+        String csvSplitBy = ",";
 
+        try (BufferedReader br = new BufferedReader(new FileReader(csvFile))) {
+            while ((line = br.readLine()) != null) {
+                String[]
+            }
 
+        }
+    }
 }
