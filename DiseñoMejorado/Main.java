@@ -1,3 +1,8 @@
+//*Mejoras:
+//*Fucionamos clases inecesarias ya que estas traslapaban con el funcionamiento de otras
+//*Eliminamos variables extras 
+//*Rediseñamos la logica de el procedimiento
+
 package elmeromer;
 
 import java.util.List;
