@@ -4,7 +4,9 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        String csvFile = "path/to/your/csvfile.csv"; // Replace this with the actual path to your CSV file
+        String csvFile = "C:\\Users\\RJBar\\OneDrive\\Documents\\GitHub\\Grupo-3-Proyecto-Java\\elmeromer\\ExampleCSV.csv";
+
+        ;
 
         CSVReader csvReader = new CSVReader(csvFile);
         List<String> words = csvReader.readCSV();
