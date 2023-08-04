@@ -1,18 +1,18 @@
 package elmeromer;
 
 import java.util.List;
-
+//*Abrir el CSV y leerlo*/
 public class Main {
     public static void main(String[] args) {
         String csvFile = "C:\\Users\\RJBar\\OneDrive\\Documents\\GitHub\\Grupo-3-Proyecto-Java\\elmeromer\\ExampleCSV.csv";
 
         ;
 
-        CSVReader csvReader = new CSVReader(csvFile);
+        LeerCSV csvReader = new LeerCSV(csvFile);
         List<String> words = csvReader.readCSV();
 
-        List<String> palindromeWords = PalindromeProcessor.findPalindromes(words);
+        List<String> palindromeWords = ProcesadorCSV.findPalindromes(words);
 
-        PalindromeProcessor.printPalindromes(palindromeWords);
+        ProcesadorCSV.printPalindromes(palindromeWords);
     }
 }
